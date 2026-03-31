@@ -63,3 +63,40 @@
         margin: 0 auto;
     }
 }
+
+/* ===== Tiny Screens Fix (466px and below) ===== */
+@media (max-width: 466px){
+
+    .contact-wrap{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .contact-form-card,
+    .contact-info{
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+    }
+
+    .contact-form-card{
+        padding: 30px 15px;
+    }
+
+    .contact-info{
+        margin-top: 15px;
+    }
+
+    .nameEmailGroup{
+        flex-direction: column;
+    }
+
+    .nameEmailGroup > div{
+        width: 100%;
+    }
+
+    iframe{
+        height: 250px !important;
+    }
+}
