@@ -17,6 +17,7 @@ function Footer() {
         <div className="footer-center">
           <div className="footer-page-links">
             <Link to={"/"}>Home</Link>
+            <Link to={"/projects"}>Projects</Link>
             <Link to={"/services"}>Services</Link>
             <Link to={"/about"}>About</Link>
           </div>
