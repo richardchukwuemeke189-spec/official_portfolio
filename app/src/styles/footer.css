@@ -1,0 +1,113 @@
+.footer {
+  background: #161616;
+  padding: 50px 60px;
+  margin-top: 100px;
+  color: white;
+}
+
+/* MAIN LAYOUT */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LEFT */
+.footer-left h1 {
+    margin: 0;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* CENTER */
+.footer-center {
+  text-align: center;
+}
+
+/* LINKS */
+.footer-page-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.footer-page-links a {
+  text-decoration: none;
+  color: #bfbfbf;
+  transition: color 0.3s ease;
+}
+
+.footer-page-links a:hover {
+  color: white;
+}
+
+/* COPYRIGHT */
+.footer-center p {
+  margin: 0;
+  font-size: 14px;
+  color: #8a8a8a;
+  letter-spacing: 1px;
+}
+
+/* RIGHT ICONS */
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+/* ICON STYLE */
+.footer-icon i {
+  font-size: 18px;
+  color: #bfbfbf;
+  transition: all 0.3s ease;
+}
+
+.footer-icon:hover i {
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-left h1 {
+    margin-bottom: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .footer {
+    padding: 25px 20px;
+  }
+
+  .footer-page-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-right {
+    gap: 12px;
+  }
+
+  .footer-icon i {
+    font-size: 20px;
+  }
+}

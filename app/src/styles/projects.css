@@ -1,0 +1,135 @@
+.projects-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.projects-subtitle {
+  color: #aaa;
+  margin-bottom: 40px;
+  letter-spacing: 1.2px;
+  font-size: 0.95rem;
+}
+
+[data-theme="light"]{
+    .projects-subtitle{
+        color: black;
+    }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #222;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #00ffd0;
+}
+
+.project-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-content h3 {
+  color: #00ffd0;
+  margin-bottom: 5px;
+}
+
+.project-type {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.project-content p {
+  margin: 10px 0 15px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.tech-stack {
+  margin-bottom: 15px;
+}
+
+.tech-title {
+  font-size: 0.7rem;
+  color: #666;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.tech-list span {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #00ffd0;
+  margin-right: 8px;
+}
+
+/* Button */
+.live-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.live-btn:hover {
+  background: #00ffd0;
+  color: #000;
+}
+
+.project-video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  margin: 40px auto 0;
+  display: block;
+  border: 1px solid #222;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  background: #000;
+}
+
+/* Make it look better on hover (optional subtle effect) */
+.project-video:hover {
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
+
+/* Mobile spacing tweak */
+@media (max-width: 768px) {
+  .project-video {
+    margin-top: 30px;
+    border-radius: 12px;
+  }
+}
+
+.project-video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}

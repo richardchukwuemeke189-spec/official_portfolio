@@ -1,0 +1,109 @@
+.skills-container {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.skills-header{
+    text-align:  center;
+}
+
+.skills-header h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.skills-header span{
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+/* CARD */
+.skill-category-card {
+    width: 300px;
+    min-height: 250px;
+    padding: 30px 22px 30px 22px;
+    border-radius: 14px;
+
+    background: rgba(0, 245, 212, 0.04);
+    border: 1px solid rgba(0, 245, 212, 0.15);
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.35s ease;
+}
+
+.skill-category-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(0,245,212,0.15), transparent 60%);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/* TITLE */
+.skill-title {
+    margin-bottom: 18px;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: 1px;
+    color: #00f5d4;
+}
+
+/* small accent line under title */
+.skill-title::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-top: 6px;
+    background: #00f5d4;
+    border-radius: 2px;
+}
+
+/* LIST */
+.skills-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 245, 212, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* hover on list */
+.skills-list li:hover {
+    padding-left: 10px;
+    color: #00f5d4;
+}
+
+/* CARD HOVER */
+.skill-category-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 245, 212, 0.18);
+    border-color: rgba(0, 245, 212, 0.4);
+}
+
+/* glow activates */
+.skill-category-card:hover::before {
+    opacity: 1;
+}
+
+/* LIGHT MODE */
+[data-theme="light"] {
+    .skill-category-card {
+        background: #161616;
+        color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .skill-title::after {
+        background: blue;
+    }
+
+    .skills-list li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}

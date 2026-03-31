@@ -1,0 +1,233 @@
+/* Base styles (no changes here) */
+.services-section {
+  padding: 60px 5%;
+}
+
+/* Intro */
+.services-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-intro h2, .service-intro h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+}
+
+.services-intro p {
+  letter-spacing: 1.2px;
+  font-size: 0.95rem;
+}
+
+/* Grid */
+.services-grid {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.service-card {
+  background: #161616;
+  border-radius: 16px;
+  border: none;
+  overflow: hidden;
+  transition: all 0.4s ease;
+
+  width: 100%;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #00f5d4;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Image */
+.service-img-container {
+  position: relative;
+  /* height: 180px;
+  width: 100%; */
+  overflow: hidden;
+
+  width: 100%;
+  height: 200px;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.08);
+}
+
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(22, 22, 22, 1));
+}
+
+/* Content */
+.card-content {
+  padding: 20px;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00f5d4;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.tech-stack-box {
+  border-top: 1px solid #262626;
+  padding-top: 12px;
+}
+
+.tech-label {
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.tech-list {
+  font-size: 0.8rem;
+  color: #00f5d4;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 5px;
+}
+
+/* ========================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .services-section {
+    padding: 70px 6%;
+  }
+
+  .services-intro h2 {
+    font-size: 2.3rem;
+  }
+
+  .services-grid {
+    gap: 30px;
+  }
+
+  .service-img-container {
+    height: 200px;
+  }
+
+  .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .services-intro h2 {
+    font-size: 2.5rem;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .service-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 50px 4%;
+  }
+
+  .services-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-intro p {
+    font-size: 0.9rem;
+  }
+
+  .card-content {
+    padding: 18px;
+  }
+
+  .service-img-container {
+    height: 160px;
+  }
+}
+
+/* Very small devices (phones < 360px wide) */
+@media (max-width: 360px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-title {
+    font-size: 1rem;
+  }
+
+  .service-desc {
+    font-size: 0.85rem;
+  }
+
+  .tech-list {
+    font-size: 0.75rem;
+  }
+}
+
+/* Extra large screens (wider than 1440px) */
+@media (min-width: 1440px) {
+  .services-grid {
+    max-width: 1400px;
+    gap: 40px;
+  }
+
+  .service-img-container {
+    height: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+
+
+.service-card {
+  width: 100%;
+  height: 100%;
+}
+
+.service-img-container {
+  width: 100%;
+}

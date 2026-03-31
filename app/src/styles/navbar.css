@@ -1,0 +1,67 @@
+.navbar-brand{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.nav-item .nav-link{
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.theme-toggle-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+/* Professional Contact Button */
+.contact-btn {
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FF8C42);
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+.contact-btn:hover {
+  background-color: #0b5ed7;
+}
+/* Hover effect */
+.contact-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.35);
+  background: linear-gradient(135deg, #0b5ed7, #084298);
+}
+
+/* Click effect */
+.contact-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.2);
+}
+
+/* Optional: outline style for light theme */
+body.light .contact-btn {
+  background: transparent;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  box-shadow: none;
+}
+
+body.light .contact-btn:hover {
+  background: #0d6efd;
+  color: white;
+}

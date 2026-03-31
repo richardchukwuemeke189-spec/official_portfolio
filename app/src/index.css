@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --surface-color: #f8fafc;
+  --card-color: #ffffff;
+
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+
+  --border-color: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+  --bg-color: #020617;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}

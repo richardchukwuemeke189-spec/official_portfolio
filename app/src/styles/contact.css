@@ -1,0 +1,65 @@
+.contact-container h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.contact-wrap{
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-form-card{
+    color: white;
+    background: rgba(22, 22, 22, 1);
+    padding: 40px 20px;
+}
+
+
+.contact-form-card form input, .contact-form-card form textarea, .contact-form-card form select{
+    margin-bottom: 15px;
+    border: none;
+}
+
+.contact-form-card form textarea{
+    border-radius: 5px;
+}
+
+.contact-form-card form textarea{
+    width: 100%;
+}
+
+.contact-info{
+    background: #0A0A0A;
+    max-width: 300px;
+    color: white;
+}
+
+.contact-form-card, .contact-info{
+    border: 0.5px solid white;
+    border-radius: 15px;
+}
+
+.contact-form-card h4, .contact-info h4{
+    font-weight: bold;
+}
+
+@media(min-width: 768px){
+    .contact-wrap{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contact-form-card{
+        width: 600px;
+    }
+}
+
+@media(max-width: 767px){
+    .contact-wrap{
+        max-width: 100px;
+        min-width: 450px;
+        margin: 0 auto;
+    }
+}
