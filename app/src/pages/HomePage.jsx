@@ -4,6 +4,7 @@ import Service from "../components/Service";
 import Skills from "../components/Skills";
 import MyCV from '../../public/Orji_Richards_Portfolio.pdf'
 import Footer from "../components/Footer";
+import profilePhoto from "../assets/homeProfilePic.jpeg";
 
 function HomePage(){
 
@@ -17,8 +18,8 @@ function HomePage(){
                         <div className="intro_img_mobile" 
                         // style={{display:'flex', justifySelf:'flex-end'}}
                         >
-                            {/* <img src="" alt="" /> */}
-                            <div style={{backgroundColor:'black', width:'150px', height:'150px', borderRadius:'100%'}}></div>
+                            <img src={profilePhoto} alt="orji_richard_photo" style={{width:'150px', height:'150px', borderRadius:'100%'}} />
+                            {/* <div style={{backgroundColor:'black', width:'150px', height:'150px', borderRadius:'100%'}}></div> */}
                         </div>
 
                         <span>Orji Richard</span>
@@ -34,8 +35,10 @@ function HomePage(){
                         </div>
                     </div>
                     <div className="intro_img">
-                        {/* <img src="" alt="" /> */}
-                        <div style={{backgroundColor:'black', width:'250px', height:'250px', borderRadius:'100%'}}></div>
+                        <img src={profilePhoto} alt="orji_richard_photo" 
+                        // style={{width:'150px', height:'150px', borderRadius:'100%'}} 
+                        />
+                        {/* <div style={{backgroundColor:'black', width:'250px', height:'250px', borderRadius:'100%'}}></div> */}
                     </div>
                 </div>
 

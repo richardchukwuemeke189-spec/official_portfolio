@@ -4,6 +4,7 @@ import { service_data } from "../data/servicesData";
 import { funFacts_data } from "../data/funFactsData";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
+import aboutPhoto from "../assets/profilePic.jpeg";
 function About(){
 
     return(
@@ -32,8 +33,7 @@ function About(){
                         </div>
                     </div>
                     <div className="about_profile_pic" style={{marginTop:'50px'}}>
-                        {/* <img src={aboutImg} alt="profile-image" style={{backgroundColor:'black', width:'300px', height:'300px', objectFit:'cover', borderRadius:'30px'}} /> */}
-                        <div style={{backgroundColor:'black', width:'300px', height:'300px'}}></div>
+                        <img src={aboutPhoto} alt="profile-image" style={{backgroundColor:'black', width:'300px', height:'300px', objectFit:'cover', borderRadius:'30px'}} />
                     </div>
                 </div>
 

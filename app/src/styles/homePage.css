@@ -14,6 +14,17 @@
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
+.intro_img img{
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.intro_img_mobile img{
+    object-fit: cover;
+}
+
 .intro_txt span{
     word-spacing: 5px;
     letter-spacing: 5px;
