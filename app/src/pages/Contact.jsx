@@ -138,7 +138,7 @@ function Contact(){
                                 className="btn btn-primary w-100"
                                 disabled={loading}
                                 >
-                                {loading ? "Sending..." : "Send Message"}
+                                {loading ? <div className='loader'></div> : "Send Message"}
                             </button>
                         </form>
                     </div>
