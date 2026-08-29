@@ -349,7 +349,9 @@ function Contact() {
                                 disabled={loading}
                             >
                                 {loading ? (
-                                    <div className="loader"></div>
+                                    <div className="loader">
+                                        Submitting ...
+                                    </div>
                                 ) : (
                                     "Send Message"
                                 )}
