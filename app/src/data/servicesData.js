@@ -1,6 +1,5 @@
 import {
     FaCode,
-    FaPaintBrush,
     FaServer,
     FaMobileAlt,
     FaTools
@@ -12,39 +11,34 @@ export const service_data = [
         icon: FaCode,
         image: "https://png.pngtree.com/thumb_back/fh260/background/20230720/pngtree-virtual-space-enhanced-with-abstract-blue-neon-lines-geometric-shapes-and-image_3686716.jpg",
         title: "Custom Web Application Development",
-        description: "Building scalable, end-to-end web solutions. I focus on creating robust architectures that handle complex data while staying fast and maintainable.",
-        techStack: ""
+        description: "Building functional and scalable web applications with modern technologies. I focus on creating maintainable solutions with clean code, reusable components, and reliable functionality.",
+        techStack: "React, JavaScript"
     },
+
     {
         id: 2,
-        icon: FaPaintBrush,
-        image: "https://cdn.dribbble.com/userupload/15155542/file/original-95714278fcbbe58b7ea1fe33747b3952.jpg?format=webp&resize=400x300&vertical=center",
-        title: "UI/UX Design & Prototyping",
-        description: "Designing intuitive user interfaces with a focus on user experience. I create high-fidelity wireframes that balance aesthetics with functional clarity.",
-        techStack: "Figma"
-    },
-    {
-        id: 3,
         icon: FaServer,
         image: "https://www.shutterstock.com/shutterstock/videos/3832019867/thumb/7.jpg?ip=x480",
-        title: "API Integration & Backend Logic",
-        description: "Connecting frontends to powerful backend services. I specialize in building secure APIs and managing databases for seamless data flow.",
-        techStack: "NodeJs"
+        title: "API Integration & Backend Development",
+        description: "Connecting frontend applications to backend services and APIs. I build and integrate secure APIs, handle application data, and implement reliable data flows between the frontend and backend.",
+        techStack: "Node.js, Express, REST APIs"
     },
+
     {
-        id: 4,
+        id: 3,
         icon: FaMobileAlt,
         image: "https://thumbs.dreamstime.com/b/flat-design-web-site-concept-multiple-devices-work-desk-laptop-computer-display-smart-phone-tablet-purple-wall-143432313.jpg",
         title: "Responsive Frontend Development",
-        description: "Translating designs into pixel-perfect code. I ensure your website performs flawlessly across all screen sizes, from mobile to ultra-wide desktops.",
-        techStack: "HTML, CSS, JavaScript, React"
+        description: "Building responsive and user-friendly interfaces that work across mobile, tablet, and desktop devices. I focus on clean layouts, reusable React components, and consistent functionality across screen sizes.",
+        techStack: "HTML, CSS, JavaScript, React, Bootstrap"
     },
+
     {
-        id: 5,
+        id: 4,
         icon: FaTools,
         image: "https://media.istockphoto.com/id/805182686/photo/computer-code-snippet.jpg?s=612x612&w=0&k=20&c=b3ybSL3UcRYHZWXXKqD3NhZ2ANeaLjaV176LiGvVNOY=",
         title: "Technical Troubleshooting",
-        description: "Diagnosing complex technical issues and optimizing codebases. I provide efficient solutions to improve performance, and code quality.",
-        techStack: ""
+        description: "Diagnosing and resolving frontend and backend issues, debugging applications, and improving existing code to enhance reliability, performance, and maintainability.",
+        techStack: "JavaScript, React, Node.js"
     }
 ];

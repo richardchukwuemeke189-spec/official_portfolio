@@ -2,26 +2,30 @@ export const skills_data = [
     {
         id: 1,
         title: "Frontend Development",
-        description: ["React.js", "UI/UX Design", "Bootstrap"]
+        description: ["React.js", "JavaScript", "Bootstrap"]
     },
+
     {
         id: 2,
-        title: "Backend Engineering",
+        title: "Backend Development",
         description: ["Node.js", "Express", "JWT Authentication"]
     },
+
     {
         id: 3,
         title: "Database Systems",
-        description: ["PostgreSQL", "Query Optimization"]
+        description: ["PostgreSQL", "MySQL", "Supabase"]
     },
+
     {
         id: 4,
-        title: "Deployment & Hosting",
-        description: ["Render"]
+        title: "API Integration",
+        description: ["REST APIs", "API Integration", "Postman"]
     },
+
     {
         id: 5,
-        title: "Tools & Workflow",
-        description: ["Git", "GitHub", "Postman"]
+        title: "Tools & Deployment",
+        description: ["Git", "GitHub", "Render"]
     }
 ];

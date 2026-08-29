@@ -1,6 +1,6 @@
 import lumeWeatherPhoto from '../images/lumeWeather.png';
-import camp_connectPhoto from '../images/campConnect.png';
-import schoolPhoto from '../images/school.png';
+import cafeFlowPhoto from '../images/cafeflow_img.png';
+import grandStayPhoto from '../images/grandstay_img.png';
 import schoolManagementVideo from '../videos/schoolManagement.mp4';
 
 export const projects_data = [
@@ -15,23 +15,22 @@ export const projects_data = [
   },
   {
     id: 2,
-    name: "CampConnect",
+    name: "CafeFlow",
     type: "Web Application",
-    description: "A campus information sharing platform that allows students to post, discover, and stay updated on announcements, events, and activities within their school.",
-    techStack: ["React"],
-    image: camp_connectPhoto,
-    liveLink: "https://camp-connect-kc95.onrender.com"
+    description: "A responsive cafe website and management dashboard that allows customers to explore the cafe, view the menu, make reservations, and send inquiries, while providing an admin interface for managing reservations and messages.",
+    techStack: ["React", "Supabase", "JavaScript", "Bootstrap"],
+    image: cafeFlowPhoto,
+    liveLink: "https://cafeflow-app.netlify.app"
   },
   {
     id: 3,
-    name: "Middlesex University Portal (Student Project)",
+    name: "Grand Stay Hotel",
     type: "Web Application",
-    description: "A frontend university portal UI concept developed as part of a school project, showcasing announcements and access to campus resources.",
-    disclaimer: "This is a personal student project and is not affiliated with or endorsed by Middlesex University.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    image: schoolPhoto,
-    liveLink: "https://school-wzqm.onrender.com"
-  }
+    description: "A responsive hotel website designed to provide guests with a smooth browsing experience, allowing them to explore hotel rooms, view details, and navigate the hotel's services across different devices.",
+    techStack: ["React", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    image: grandStayPhoto,
+    liveLink: "https://grandstay-hotelapp.netlify.app"
+  },
 ];
 
 export const projVideoData = [

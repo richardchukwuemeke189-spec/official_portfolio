@@ -11,6 +11,7 @@ function Footer() {
         {/* LEFT */}
         <div className="footer-left">
           <h1>OR</h1>
+          <p>React & Web Developer</p>
         </div>
 
         {/* CENTER */}
