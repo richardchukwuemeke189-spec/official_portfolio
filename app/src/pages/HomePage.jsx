@@ -24,9 +24,11 @@ function HomePage(){
 
                         <span>Orji Richard</span>
                         <h1>Full-Stack Web Developer</h1>
-                        <span>Web Developer | UI Designer</span>
+                        <span>React & Web Development</span>
                         <p className="mt-2">
-                            Bridging complex backend logic with modern, responsive, and polished interfaces
+                            Building responsive, reliable, and user-focused web
+                            <br />
+                            applications with modern frontend and backend technologies.
                         </p>
                         <div className="intro-connect">
                             <button className="btn btn-primary">
